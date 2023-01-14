@@ -1,0 +1,23 @@
+/*
+	***************
+	* Metric Card *
+	***************
+*/
+[data-testid="metric-container"] { transition:  all 0.3s ease; }
+[data-testid="metric-container"]:hover { opacity:  0.75; transform: translateY(-10px); }
+
+/*
+	*********************
+	* Credits Container *
+	*********************
+*/
+a { text-decoration: none; }
+
+/*
+	*******************************
+	* Streamlit Native Components *
+	*******************************
+*/
+header { visibility: hidden; }
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
