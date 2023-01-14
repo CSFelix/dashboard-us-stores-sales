@@ -30,12 +30,12 @@ BOX_BAR_PLOT_OPTIONS = ('Box Plot', 'Bar Plot')
 REGRESSION_PLOT_FEATURES = ('Profit', 'Margin', 'Sales', 'COGS', 'Total_Expenses', 'Inventory')
 PIE_PLOT_FEATURES = ('Profit', 'Margin', 'Sales', 'COGS', 'Total_Expenses', 'Marketing', 'Inventory')
 
+EMAIL = 'csfelix08@gmail.com'
 SOCIAL_MEDIA = {
 	'GitHub': 'https://github.com/csfelix'
 	, 'Kaggle': 'https://www.kaggle.com/dsfelix'
 	, 'Portfolio': 'https://csfelix.github.io'
 	, 'LinkedIn': 'https://linkedin.com/in/csfelix'
-	, 'Email': 'csfelix08@gmail.com'
 }
 
 # ---- PAGE SETTINGS ----
@@ -352,6 +352,7 @@ elif selected == 'Credits':
 	st.title('📬 Reach Me')
 	st.write('#')
 
-	cols = st.columns(len(SOCIAL_MEDIA))
+	cols = st.columns(len(SOCIAL_MEDIA) + 1)
 	for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 		cols[index].write(f'[{platform}]({link})')
+	cols[-1].write(f'{EMAIL}')
